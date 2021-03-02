@@ -1,9 +1,0 @@
-@mixin slider-fix {
-  .slide {
-    position: relative;
-    display: none;
-    &:first-of-type,&.slick-slide {
-      display: block;
-    }
-  }
-}
