@@ -1,0 +1,94 @@
+.services {
+    padding-top: 140px;
+
+    @include point(lg-def) {
+        padding-top: 85px;
+    }
+    @include point(def-down) {
+        padding-top   : 60px;
+     
+    }
+
+}
+
+.service__item {
+    width        : 270px;
+   // height       : 223px;
+    margin-bottom: 100px;
+
+    @include point(lg-md) {
+        width: 220px;
+    }
+
+    @include point(md-down) {
+        width        : 100%;
+        margin-bottom: 40px;
+    }
+
+    &--all-services {
+        text-align: right;
+    }
+
+}
+
+.service__item:last-child {
+
+    @include point(md-down) {
+        height: 62px;
+    }
+}
+
+.service__icon-wrap {
+    min-height   : 55px;
+    margin-bottom: 37px;
+}
+
+.service__icon {
+    background: url(../../img/icons-png/icons.png);
+
+    &--web {
+        width              : 43px;
+        height             : 44px;
+        background-position: -42px -312px;
+    }
+
+    &--mobile {
+        width              : 40px;
+        height             : 45px;
+        background-position: -45px -214px;
+    }
+
+    &--qa {
+        width              : 45px;
+        height             : 43px;
+        background-position: -40px -356px;
+    }
+
+    &--consalting {
+        width              : 46px;
+        height             : 41px;
+        background-position: -39px -85px;
+    }
+
+    &--devops {
+        width              : 71px;
+        height             : 44px;
+        background-position: -14px -126px;
+    }
+
+    &--mvp {
+        width              : 34px;
+        height             : 53px;
+        background-position: -51px -259px;
+    }
+
+    &--infrastructure {
+        width              : 52px;
+        height             : 44px;
+        background-position: -33px -170px;
+    }
+}
+
+.service__title {
+    margin-bottom: 32px;
+}

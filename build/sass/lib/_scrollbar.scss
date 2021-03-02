@@ -1,0 +1,165 @@
+//Цвет скролбара при наведении
+%scroll-hover {
+  background-color: $blue-1;
+}
+//Цвет скролбара при перетаскивании
+%scroll-draggable {
+  background-color: $dark-1;
+}
+//Цвет подложки скроллбара
+%scroll-element_track {
+  background-color: $blue-1;
+}
+//Паддинг под скроллбар
+%area-padding {
+  padding: 0 8px 0 0;
+}
+//Позиционирование области вертикального скрола
+%scroll-pos {
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+//Ширина области вертикального скрола
+%scroll-size {
+  width: 8px;
+}
+//Стили активной части вертикального скроллбара
+%scroll-bar {
+  left: 0;
+  width: 8px;
+  background-color: $blue-1;
+}
+//Высота области скрола, опционально.
+%scroll-height {
+  height: 100px;
+}
+
+
+.scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative;
+  > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+    @extend %area-padding;
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
+  }
+}
+.scroll-element {
+  display: none;
+  box-sizing: content-box;
+  &.scroll-y.scroll-scrolly_visible {
+    display: block;
+  }
+  div {
+    box-sizing: content-box;
+  }
+  .scroll-bar, .scroll-arrow {
+    cursor: default;
+  }
+}
+.scroll-textarea {
+  border: 1px solid #cccccc;
+  border-top-color: #999999;
+  > .scroll-content {
+    overflow: hidden !important;
+    > textarea {
+      border: none !important;
+      box-sizing: border-box;
+      height: 100% !important;
+      margin: 0;
+      max-height: none !important;
+      max-width: none !important;
+      overflow: scroll !important;
+      outline: none;
+      padding: 2px;
+      position: relative !important;
+      top: 0;
+      width: 100% !important;
+      &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+}
+.scrollbar-inner {
+  @extend %scroll-height;
+  .scroll-element_size {
+    @extend %scroll-size;
+    @extend %scroll-element_track;
+  }
+  .scroll-element_outer {
+    width: 100%;
+    overflow: hidden;
+  }
+  > .scroll-element {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    &:hover {
+      .scroll-bar {
+        @extend %scroll-hover;
+      }
+    }
+    &.scroll-draggable {
+      .scroll-bar {
+        @extend %scroll-draggable;
+      }
+    }
+    &.scroll-x {
+      bottom: 2px;
+      height: 8px;
+      left: 0;
+      width: 100%;
+      display: none!important;
+      &.scroll-scrolly_visible {
+        .scroll-element_track {
+          left: -12px;
+        }
+      }
+    }
+    &.scroll-y {
+      @extend %scroll-pos;
+      @extend %scroll-size;
+      &.scroll-scrollx_visible {
+        .scroll-element_track {
+          top: -12px;
+        }
+        .scroll-element_size {
+          top: -12px;
+        }
+      }
+    }
+    div {
+      border: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      z-index: 10;
+      display: block;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+    .scroll-bar {
+      @extend %scroll-bar;
+    }
+  }
+}

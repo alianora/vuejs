@@ -1,0 +1,89 @@
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    padding-top     : 20px;
+    top:0;
+    height: 85px;
+    left    : 0;
+    right   : 0;
+    z-index: 3;
+    transition: 0.2s linear;
+}
+
+.header-top__logo{
+    margin-right: 80px;
+    width: 117px;
+    height: 40px;
+
+    @include point(def-down){
+        margin-right: 0;
+      }
+}
+
+.header-stiky{
+background-color: $light-1;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header-stiky .menu__link,
+.header-stiky .menu__link,
+.header-stiky .language-switch__link,
+.header-stiky .loader-link span{
+  color: $dark-1;
+} 
+
+.header-stiky .line{
+  stroke: $dark-1;
+}
+
+
+.contact-us-top span{
+display: block;
+margin-right: 20px;
+color: $light-1;
+font-size:14px;
+font-weight: 700;
+}
+
+.contact-us-top:hover .loader{
+    animation: loader 2s linear infinite;
+  }
+
+  .menu{
+
+    @include point(def-down){
+        display: none;
+      }
+
+    &__link{
+        margin-right: 20px;
+        font-size: 14px;
+        color : $light-1;
+        font-weight: 700;
+    }
+  }
+
+  .box-social__link{
+    &--top{
+  color : $light-1;
+    }
+}
+  .language-switch,
+  .contact-us-top{
+
+    @include point(def-down){
+        display: none;
+      }
+  }
+
+  .icon-phone{
+display: none;
+width: 24px;
+height: 24px;
+background: url("../../img/icons-png/icone-phone.png") no-repeat;
+
+    @include point(def-down){
+        display: block;
+      }
+
+  }

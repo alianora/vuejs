@@ -1,0 +1,155 @@
+.attention-details {
+    @include point(md-down) {
+    margin-top: 50px;
+    }
+}
+
+
+.attention-details__wrap {
+    position: relative;
+}
+
+.attention-details__list {
+    width   : 66.6%;
+    position: relative;
+    z-index : 1;
+
+    @include point(def-md) {
+        width         : 100%;
+    }
+
+    @include point(md-down) {
+        width         : 100%;
+        flex-direction: column;
+    }
+}
+
+.attention-details__item {
+    position     : relative;
+    margin-bottom: 60px;
+    padding-left : 30px;
+    padding-right: 30px;
+
+    @include point(md-down) {
+        width        : 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.attention-details__item:before {
+    position        : absolute;
+    content         : "";
+    left            : 0;
+    top             : 4px;
+    width           : 7px;
+    height          : 7px;
+    border-radius   : 50%;
+    background-color: $yellow-1;
+}
+
+// for background image
+
+
+.backgr {
+    position: absolute;
+    bottom  : 0;
+    right   : 0;
+    overflow: hidden;
+    width   : 473px;
+    height  : 572px;
+    
+    @include point(lg-down) {
+        opacity: 0.3;
+    }
+    
+}
+
+.backgr-1 {
+    display      : flex;
+    position     : relative;
+    align-items  : center;
+    width        : 1380px;
+    height       : 1380px;
+    border-radius: 50%;
+    background   : url("../../img/backgrounds/solutions-bg.png") no-repeat;
+
+    @include point(md-down) {
+        margin-top : 150px;
+        margin-left: 225px;
+    }
+
+}
+
+.backgr-1:before {
+    position        : absolute;
+    content         : "";
+    width           : 85px;
+    height          : 85px;
+    left            : 107px;
+    top             : 217px;
+    border-radius   : 50%;
+    background-color: $yellow-1;
+
+    @include point(md-down) {
+        width  : 47px;
+        height : 47px;
+        left   : 138px;
+        z-index: 2;
+    }
+}
+
+.backgr-1:after {
+    position        : absolute;
+    content         : "";
+    width           : 35px;
+    height          : 35px;
+    left            : 161px;
+    top             : 174px;
+    border-radius   : 50%;
+    background-color: $background-color;
+    border          : 10px solid $yellow-1;
+
+    @include point(md-down) {
+        width  : 19px;
+        height : 19px;
+        left   : 190px;
+        top    : 190px;
+        border : 7px solid $yellow-1;
+        z-index: 2;
+    }
+}
+
+.backgr-2 {
+    position        : relative;
+    width           : 895px;
+    height          : 895px;
+    margin          : auto;
+    border-radius   : 50%;
+    background-color: $background-color;
+    z-index         : 1;
+
+}
+
+.backgr-2:before {
+    position        : absolute;
+    content         : "";
+    left            : -222px;
+    right           : -222px;
+    top             : -222px;
+    bottom          : -222px;
+    border-radius   : 50%;
+    background-color: transparent;
+    border          : 1px solid $background-color;
+}
+
+.backgr-2:after {
+    position        : absolute;
+    content         : "";
+    left            : -24px;
+    right           : -24px;
+    top             : -24px;
+    bottom          : -24px;
+    border-radius   : 50%;
+    background-color: transparent;
+    border          : 1px solid $background-color;
+}

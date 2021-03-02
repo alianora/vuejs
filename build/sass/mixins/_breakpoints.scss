@@ -1,0 +1,22 @@
+@mixin point($point) {
+  $divider-index: str-index($point, "-");
+  $first-point: str-slice($point, 0, $divider-index - 1);
+  $second-point: str-slice($point, $divider-index + 1, str-length($point));
+
+  @if $second-point == up {
+    @media only screen and (min-width: map-get($points, $first-point) + "px") {
+      @content;
+    }
+  } @else if $second-point == down {
+    @media only screen and (max-width: map-get($points, $first-point) + "px") {
+      @content;
+    }
+  } @else {
+    $min-value: min(map-get($points, $first-point), map-get($points, $second-point)) + 1 + "px";
+    $max-value: max(map-get($points, $first-point), map-get($points, $second-point)) + "px";
+
+    @media (min-width: $min-value) and (max-width: $max-value) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+
+
+.clients{
+    padding-top: 140px;
+    padding-bottom: 100px;
+
+    @include point(lg-def) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      @include point(def-down) {
+        padding-top   : 40px;
+        padding-bottom: 40px;
+    }
+     
+}
+
+.section-title--clients{
+    margin-bottom: 50px;
+
+    @include point(lg-down) {
+        margin-bottom: 25px;
+      }
+}
+
+.section-description--clients{
+    font-size: 35px;
+    color: $grey-1;
+    margin-bottom: 100px;
+
+    @include point(lg-down) {
+        font-size: 25px;
+        margin-bottom: 50px;
+      }
+}
+.clients__img{
+    display: block;
+    margin: 0 auto;
+}
+.clients__item{
+    height: 40px;
+    margin-bottom: 100px;
+
+    @include point(lg-def) {
+        margin-bottom: 80px;
+      }
+      @include point(def-down) {
+        margin-bottom: 60px;
+      }
+
+
+
+&--footcareer-logo{
+    background: url("../../img/sprite.svg#footcareer-logo") no-repeat center center;
+    &:hover{
+        background: url("../../img/sprite.svg#footcareer-logo-hover") no-repeat center center;
+        background-size: cover;
+    }
+}
+&--lester-logo{
+    background: url("../../img/sprite.svg#lester-logo") no-repeat center center;
+    &:hover{
+        background: url("../../img/sprite.svg#lester-logo-hover") no-repeat center center;
+        background-size: contain;
+    }
+}
+&--ticket-logo{
+    background: url("../../img/sprite.svg#ticket-logo") no-repeat center center;
+    &:hover{
+        background: url("../../img/sprite.svg#ticket-logo-hover") no-repeat center center;
+    }
+}
+
+}
+
+
+.clients__slider .slick-slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.clients__img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+// for slider dots

@@ -1,0 +1,199 @@
+%inputs {
+  width: 100%;
+  box-shadow:0; //0 1px 5px rgba(0, 0, 0, .25);
+  padding-top: 0;
+  padding-left: $input-indent-left;
+  background-color: transparent;
+  border: none;
+  border-bottom: $input-border solid $input-border-color;
+  @if ($input-border-radius != false){
+    border-radius: $input-border-radius;
+  }
+  @if ($input-border-bottom != false){
+    border-bottom: $input-border solid $input-border-color;
+  }
+  font-family: $font-family-validation;
+  font-size: $input-fz;
+  color: $input-color;
+  transition: border-color .2s;
+  @include placeholder {
+    font-family: $font-family-validation;
+    font-size: $input-fz;
+    color: $input-placeholder-color;
+  }
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+  &:focus {
+    border-color: $input-border-focus;
+  }
+}
+
+%filled-placeholder {
+  top: 7px;
+  font-size: $input-placeholder-fz-filled;
+  color: $input-placeholder-color;
+}
+
+.validation {
+  font-family: $font-family-validation;
+  font-size: 0;
+
+  &__field {
+    width: 48.5%;
+    position: relative;
+    display: block;
+    margin-top: 35px;
+
+
+  &--details{
+    width: 100%;
+  }
+    @include point(lg-down) {
+       width: 100%;
+     }
+
+    
+
+    &--password{
+      width: 100%;
+    }
+
+    &.filled > .validation__placeholder{
+      @extend %filled-placeholder;
+    }
+
+    &.error {
+      .validation__input,
+      .validation__textarea,
+      .select2-selection--single,
+      .checkbox {
+        border-color: $red-1 !important;
+      }
+
+      & > .validation__error-text {
+        display: block;
+      }
+    }
+    &.has-password {
+      &>.validation__input {
+        padding-right: 45px;
+      }
+    }
+  }
+   
+  
+
+  &__placeholder {
+    pointer-events: none;
+    position: relative;
+   width: 100%;
+    top: 16px;
+    left: 10px;
+    font-size: 16px;
+    color: $light-1;
+    transition: all .2s
+  }
+
+  &__error-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: none;
+    font-size: 12px;
+    color: $red-1;
+  }
+
+  &__pass-view {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 25px;
+    height: $input-height;
+    background: url("../img/sprite.svg#pass-no-view") no-repeat 50%;
+    cursor: pointer;
+    &.show {
+      @include icon(pass-view);
+    }
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    @extend %inputs;
+
+    &:focus {
+      border-color: $yellow-1;
+    }
+
+    &:focus {
+      & + .validation__placeholder {
+        @extend %filled-placeholder;
+      }
+    }
+  }
+
+  &__input,
+  &__select {
+    vertical-align: middle;
+    height: $input-height;
+  }
+
+  &__textarea {
+    min-height: 120px;
+    padding-top: 22px;
+    resize: vertical;
+  }
+}
+
+.g-recaptcha > div {
+  margin: 0 calc(50% - 152px);
+}
+
+
+.validation__field--details span{
+  padding-left: 10px;
+  font-size: 12px;
+
+}
+
+
+
+// tz
+
+
+
+input[type=file] {
+  outline       : 0;
+  opacity       : 0;
+  pointer-events: none;
+  user-select   : none;
+ // width         : 100%;
+  height        : 0;
+  padding       : 0;
+}
+
+.validation__field--tz {
+  width        : 170px;
+  margin-top: 70px;
+  border-radius: 5px;
+  cursor       : pointer;
+  text-align   : center;
+}
+
+.title {
+  display: block;
+  position: relative;
+  padding-left: 34px;
+}
+
+.title:before {
+  position  : absolute;
+  content   : "";
+  top       : 0;
+  left      : 0;
+  width     : 20px;
+  height    : 22px;
+  background: url('../../img/icons-png/Vector.png') no-repeat center;
+}

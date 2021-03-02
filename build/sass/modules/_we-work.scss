@@ -1,0 +1,98 @@
+.we-work {
+    padding-top: 75px;
+
+    @include point(def-md) {
+        padding-top   : 40px;
+    }
+}
+
+// .section__header--we-work{
+
+//     @include point(md-down) {
+//        flex-direction: column; 
+//        margin-bottom: 60px;
+//     }
+// }                                                
+
+.plan-item__title,
+.plan-item__description {
+    color: $light-1;
+
+}
+
+.we-work__plan-item a {
+    color: $light-1;
+}
+
+.we-work__plan-list {
+    padding-top   : 80px;
+    padding-bottom: 80px;
+    background    : url("../../img/backgrounds/we_bg_2.jpg") no-repeat center bottom fixed;
+
+
+    @include point(md-down) {
+        
+        background-size      : cover;
+        background-position  : 50% 50% !important;
+        background-attachment: scroll;
+        
+    }
+
+
+}
+.we-work__plan-list-wrap{
+
+    @include point(md-down) {
+        flex-direction: column;     
+    }
+}
+.we-work__plan-item {
+    position     : relative;
+    padding-right: 145px;
+    padding-left: 30px;
+
+    @include point(lg-down){
+       padding-right: 30px;
+      }
+      @include point(md-down){
+          width: 100%;
+        margin-bottom: 70px;
+       }
+}
+
+.we-work__plan-item:last-child{
+    @include point(md-down){
+      margin-bottom: 0px;
+     }
+}
+
+
+.we-work__plan-item::after {
+    position        : absolute;
+    content         : "";
+    width           : 609px;
+    height          : 609px;
+    right           : 0;
+    top             : 0;
+    bottom          : 0;
+    margin          : auto;
+    border-radius   : 50%;
+    background-color: transparent;
+    border-right    : 1px solid $background-color;
+z-index: 1;
+    @include point(md-down){
+      display: none;
+     }
+}
+
+
+
+
+.plan-item__title {
+    line-height  : 120%;
+    margin-bottom: 30px;
+}
+
+.plan-item__description p {
+    color: $light-1;
+}

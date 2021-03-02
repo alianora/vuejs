@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+//variables, typography
+@import "config";
+
+//mixins
+@import "mixins/breakpoints";
+@import "mixins/clearfix";
+@import "mixins/capture";
+@import "mixins/heading";
+@import "mixins/item-img";
+@import "mixins/icon";
+@import "mixins/placeholder";
+@import "mixins/slider-fix";
+
+
+//STYLES
+@import "reset";
+@import "grid";
+@import "base";
+@import "helpers";
+
+//libs
+@import "lib/slick-theme";
+@import "lib/select2";
+@import "lib/popup-slide";
+@import "lib/fancybox3";
+@import "lib/scrollbar";
+@import "lib/nouislider";
+
+//components
+@import "components/loader";
+@import "components/language-switch";
+@import "components/input-field";
+@import "components/form";
+@import "components/all-link";
+@import "components/loader-link";
+
+//modules
+@import "modules/validation";
+@import "modules/header";
+@import "modules/btn-burger";
+@import "modules/banner";
+@import "modules/services";
+@import "modules/solutions";
+@import "modules/services";
+@import "modules/attention-details";
+@import "modules/we-work";
+@import "modules/projects";
+@import "modules/clients";
+@import "modules/team";
+@import "modules/news";
+@import "modules/contacts-and-order";
+@import "modules/footer"
+//layouts
+

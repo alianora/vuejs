@@ -1,0 +1,3 @@
+@mixin background($img-name){
+  background: url("../images/#{$img-name}.jpg")no-repeat center/cover;
+}

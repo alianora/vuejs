@@ -1,0 +1,43 @@
+.select2-selection--single {
+  display: block;
+  height: $input-height;
+  @if ($input-border-radius != false){
+    border-radius: $input-border-radius;
+  }
+  @if ($input-border != false){
+    border: $input-border solid $input-border-color;
+  }
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+  background-color: $input-bg;
+  font-size: $input-fz;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  .select2-selection__rendered {
+    display: block;
+    padding-left: $input-indent-left;
+    padding-right: 30px;
+    line-height: $input-height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .select2-selection__clear {
+    position: relative;
+  }
+}
+
+&[dir="rtl"] {
+  .select2-selection--single {
+    .select2-selection__rendered {
+      padding-right: 8px;
+      padding-left: 20px;
+    }
+  }
+}

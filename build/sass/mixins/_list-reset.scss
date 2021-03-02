@@ -1,0 +1,10 @@
+@mixin list-reset($list-margin:0){
+  margin: $list-margin;
+  padding: 0;
+  list-style: none;
+  li {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+}

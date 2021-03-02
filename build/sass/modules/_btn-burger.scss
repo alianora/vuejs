@@ -1,0 +1,87 @@
+.btn-burger {
+  position        : relative;
+  top             : -4px;
+  margin-right    : 86px;
+  width           : 45px;
+  height          : 45px;
+  border          : none;
+  background-color: transparent;
+  z-index         : 10;
+
+
+  @include point(def-md) {
+    margin-right: 30px;
+  }
+
+  @include point(md-sm) {
+    margin-right: 30px;
+  }
+
+  @include point(sm-down) {
+    margin-right: 26px;
+  }
+
+}
+
+
+// class for body
+
+.hidden {
+  overflow: hidden;
+
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height          : 100%;
+  top             : 100px;
+  position        : absolute;
+  width           : 100%;
+  z-index         : 5;
+}
+
+
+
+// BUTTON open menu
+
+.ham {
+  cursor                     : pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition                 : transform 400ms;
+  -moz-user-select           : none;
+  -webkit-user-select        : none;
+  -ms-user-select            : none;
+  user-select                : none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill          : none;
+  transition    : stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke        : $light-1;
+  stroke-width  : 5.5;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 30 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}

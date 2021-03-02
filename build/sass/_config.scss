@@ -1,0 +1,108 @@
+//Media breakpoints
+$points: (
+        st: 320,
+        xs: 375,
+        psw: 412,
+        sm: 480,
+        ms: 640,
+        md: 798,
+        def: 1024,
+        lg: 1280,
+        xl: 1366,
+        mg: 1440,
+        hd: 1720,
+        dt: 1980
+);
+
+// COLORS
+$red-1: #F53636;  //error
+$dark-1: #161616;  // title texts
+$dark-2: #282828;  // secondary text
+$grey-1: #908F8F;
+$grey-2: #E7E7E7;  // fields
+$blue-1: #006CCF;
+$light-1: #FBFBFB;  // backgrounds
+$yellow-1: #EEDC82; // buttons
+
+
+//Font families
+$font-family: 'Noto Sans', sans-serif;
+$font-style: normal;
+
+//PARAGRAPH STYLES
+$paragraph-margin: 0; //margin-bottom
+$font-size-paragraph: 16px;
+$paragraph-height: 140%;
+$paragraph-color: $dark-2;
+
+//HEADINGS STYLES
+$font-family-headings: $font-family;
+$heading-margin: 0, 0, 0, 0, 0, 0;
+$heading-margin-bottom: 100px;
+$heading-font-size: 48, 35, 32, 24, 20, 18;
+$heading-font-weight: 700,700,700,600,600,500; // 1 = "normal"(400)
+$heading-uppercase: 0,0,0,0,0,0; // 0 = "none", 1 = "uppercase"
+$heading-text-align: l,l,l,l,l,l; // c = "center", l = "left", r = "right"
+$heading-color: $dark-1;
+$heading-font-style: normal;
+
+// MD Heading sizes (prefix from points)
+$md-heading-change: true;
+$md-heading-margin: 30, 28, 25, 22, false, false;
+$md-heading-font-size: 36, 30, 24, 20, 18, 16;
+
+
+$list-image: false;  //list.png
+$background-color: #FBFBFB;
+$link-color: $dark-1;
+$link-hover-color: $dark-1;
+
+//Tables default styles
+$table-margin: 40px;
+$table-border-color: #d6d6d6;
+$table-fz: $font-size-paragraph;
+$table-color: #3c3c3c;
+$table-heading-color: false;
+
+//FORMS
+$font-family-validation: $font-family;
+
+$input-height: 45px;
+$input-indent-left: 10px;
+$input-fz: $font-size-paragraph;
+$input-border: 1px; // 1px || false
+$input-border-bottom: 1px;
+$input-border-radius: 0; // 1px || false
+$input-border-color: $grey-1;
+$input-border-hover: $yellow-1;
+$input-border-focus: $yellow-1;
+$input-color: $dark-1;
+$input-placeholder-color: $dark-1;
+$input-placeholder-fz-filled: 14px;
+$input-bg: transparent;
+
+$select-arrow-indent-right: 10px;
+$select-arrow-width: 14px;
+$select-arrow-height: 8px;
+$select-arrow-icon: url("../img/sprite.svg#b-arrow");
+
+$select-option-padding: 4px 10px;
+$select-option-fz: $font-size-paragraph;
+$select-option-bg: $input-bg;
+$select-option-hover-bg: $blue-1;
+$select-option-hover-color: #fff;
+$select-option-selected-bg: $blue-1;
+$select-option-selected-color: #fff;
+
+$select-dropdown-bg: #fff;
+$select-dropdown-border-radius: false; // 1px || false
+$select-dropdown-border: false; // 1px || false
+$select-dropdown-color: $blue-1;
+
+$checkbox-size: 17px;
+$checkbox-border-size: 1px;
+$checkbox-border-color: $light-1;
+$checkbox-border-radius: 4px;
+$checkbox-icon: url("../img/icons-png/checkbox-c-check.png#checked");
+$checkbox-icon-width: 15px;
+$checkbox-title-fz: $font-size-paragraph;
