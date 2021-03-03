@@ -33,7 +33,7 @@ props: ['items','quantity']
 }
 </script>
 
-<style scoped>
+<style>
 .slick-prev, .slick-next {
   background-color: #2c3e50;
 }

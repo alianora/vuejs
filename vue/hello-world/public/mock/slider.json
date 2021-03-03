@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "slider 1",
+    "vendor": "image",
+    "image":
+    [
+      {
+        "src": "/img/posters/img.png",
+        "alt": "poster 1"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "slider 2",
+    "vendor": "image",
+    "image":
+    [
+      {
+        "src": "/img/posters/img_1.png",
+        "alt": "poster 2"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "slider 4",
+    "vendor": "image",
+    "image":
+    [
+      {
+        "src": "/img/posters/img_2.png",
+        "alt": "poster 3"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "slider 4",
+    "vendor": "image",
+    "image":
+    [
+      {
+        "src": "/img/posters/img_3.png",
+        "alt": "poster 4"
+      }
+    ]
+  }
+]
