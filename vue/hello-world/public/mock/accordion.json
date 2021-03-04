@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "active": true,
+    "title": "Title 1",
+    "details": "Content 1"
+  },
+  {
+    "id": 2,
+    "active": false,
+    "title": "Title 2",
+    "details": "Content 2"
+  },
+  {
+    "id": 3,
+    "active": false,
+    "title": "Title 3",
+    "details": "Content 3"
+  }
+]

@@ -1,50 +1,37 @@
 [
   {
     "id": 1,
-    "title": "slider 1",
+    "title": "Stay Positive",
     "vendor": "image",
-    "image":
-    [
-      {
-        "src": "/img/posters/img.png",
-        "alt": "poster 1"
-      }
-    ]
+    "imageSrc": "img.png",
+    "imageAlt": "poster 1"
   },
   {
     "id": 2,
-    "title": "slider 2",
+    "title": "Hogwarts",
     "vendor": "image",
-    "image":
-    [
-      {
-        "src": "/img/posters/img_1.png",
-        "alt": "poster 2"
-      }
-    ]
+    "imageSrc": "img1.png",
+    "imageAlt": "poster 2"
   },
   {
     "id": 3,
-    "title": "slider 4",
+    "title": "Hamilton",
     "vendor": "image",
-    "image":
-    [
-      {
-        "src": "/img/posters/img_2.png",
-        "alt": "poster 3"
-      }
-    ]
+    "imageSrc": "img2.png",
+    "imageAlt": "poster 3"
   },
   {
     "id": 4,
-    "title": "slider 4",
+    "title": "Joker",
     "vendor": "image",
-    "image":
-    [
-      {
-        "src": "/img/posters/img_3.png",
-        "alt": "poster 4"
-      }
-    ]
+    "imageSrc": "img3.png",
+    "imageAlt": "poster 4"
+  },
+  {
+    "id": 5,
+    "title": "Bohemian Rhapsody",
+    "vendor": "image",
+    "imageSrc": "img4.png",
+    "imageAlt": "poster 5"
   }
 ]

@@ -43,6 +43,6 @@ props: ['items','quantity']
   background-color: #2c3e50;
 }
 .slider-item {
-  background-color: antiquewhite;
+  background-color: white;
 }
 </style>

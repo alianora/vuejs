@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+<acc-wrap></acc-wrap>
     <slick-slider :items="
     [
         { id: 1 },
@@ -45,6 +46,8 @@
 
     <posters-slider></posters-slider>
 
+
+
   </div>
 </template>
 
@@ -55,10 +58,12 @@ import SlickSlider from "./components/SlickSlider";
 import Tabs from "@/components/Tabs";
 import Tab from "@/components/Tab";
 import PostersSlider from "@/components/PostersSlider";
+import AccWrap from "@/components/AccWrap";
 
 export default {
   name: 'App',
   components: {
+    AccWrap,
     SlickSlider, Tabs, Tab, PostersSlider
   }
 }
