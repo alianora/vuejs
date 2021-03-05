@@ -1,5 +1,5 @@
 <template>
-  <div v-show="isActive"><slot></slot></div>
+  <div class="tab-content" v-show="isActive"><slot></slot></div>
 </template>
 
 <script>
@@ -34,5 +34,7 @@ export default {
 </script>
 
 <style scoped>
-
+.tab-content {
+  padding: 0 20px 10px;
+}
 </style>

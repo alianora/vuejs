@@ -38,6 +38,8 @@ name: "Tabs",
 </script>
 
 <style>
-body { padding-top: 40px; }
+.tabs {
+  margin: 10px;
+}
 
 </style>

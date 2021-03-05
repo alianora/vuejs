@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
-
+.accordion-wrap {
+  margin: 10px;
+  padding: 20px;
+}
 </style>

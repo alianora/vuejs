@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-<acc-wrap></acc-wrap>
+    <drop-down>
+      <a href="https://www.google.com/">link 1</a>
+      <a href="javascript:void(0)">link 2</a>
+      <a href="javascript:void(0)">link 3</a>
+      <a href="javascript:void(0)">link 4</a>
+    </drop-down>
+    <acc-wrap></acc-wrap>
     <slick-slider :items="
     [
         { id: 1 },
@@ -59,12 +65,13 @@ import Tabs from "@/components/Tabs";
 import Tab from "@/components/Tab";
 import PostersSlider from "@/components/PostersSlider";
 import AccWrap from "@/components/AccWrap";
+import DropDown from "@/components/DropDown";
 
 export default {
   name: 'App',
   components: {
     AccWrap,
-    SlickSlider, Tabs, Tab, PostersSlider
+    SlickSlider, Tabs, Tab, PostersSlider, DropDown
   }
 }
 </script>
